@@ -1,0 +1,3 @@
+/home/asr/SearchEngine/build/CMakeFiles/search_engine.dir
+/home/asr/SearchEngine/build/CMakeFiles/edit_cache.dir
+/home/asr/SearchEngine/build/CMakeFiles/rebuild_cache.dir

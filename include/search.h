@@ -6,6 +6,6 @@
 
 class Trie;
 
-std::vector<int> searchWord(const Trie &trie, const std::string &word);
+std::vector<int> searchWord(Trie &trie, const std::string &word);
 
 #endif  

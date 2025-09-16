@@ -1,29 +1,27 @@
 #ifndef TRIE_H
 #define TRIE_H
 
-#include<string>
-#include<vector>
-#include<map>   
+#include <string>
+#include <map>
+#include <vector>
 
-class TrieNode {
-public:
+struct TrieNode {
+    bool isEnd;
     std::map<char, TrieNode*> children;
-    bool isEnd = false;
-    std::vector<int>lineNumbers;
-    TrieNode() = default;
-    ~TrieNode() = default;
+    std::vector<int> lineNumbers;
+
+    TrieNode() : isEnd(false) {}  
 };
 
 class Trie {
 private:
     TrieNode* root;
 
-public: 
+public:
     Trie();
-    ~Trie();
-    
-    void insert(const std::string &word, int lineNum);
-    std::vector<int>getOccurences(const std::string &word);
+    void insert(const std::string& word, int lineNumber);
+    bool search(const std::string& word);
+    std::vector<int> getOccurrences(const std::string& word);
 };
 
 #endif

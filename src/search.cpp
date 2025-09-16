@@ -1,6 +1,6 @@
 #include "search.h"
 #include "trie.h"
 
-std::vector<int> searchWord(const Trie &trie, const std::string &word) {
-    return trie.getOccurences(word);
+std::vector<int> searchWord(Trie &trie, const std::string &word) {
+    return trie.getOccurrences(word);
 }

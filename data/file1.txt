@@ -1,0 +1,12 @@
+﻿This is a sample text file for testing the Search Engine project.
+
+The purpose of this file is to provide text data so that the parser can 
+read lines, the trie can store words, and the search module can 
+retrieve occurrences.
+
+Example lines:
+Hello world, this is line one.
+This project demonstrates how a trie can be used for word search.
+The word hello appears multiple times in this file.
+Searching for test should also return a valid line.
+Good luck building the rest of the project!
