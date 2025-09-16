@@ -16,8 +16,8 @@ std::string trim(const std::string &s) {
 
 std::string toLower(const std::string &s) {
     std::string result = s;
-    for (char c : s) 
-        tolower(c);
+    for (size_t i = 0; i < result.size(); i++) 
+        result[i] = std::tolower(result[i]);
     
     return result;    
 }
